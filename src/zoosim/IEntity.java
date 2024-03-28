@@ -6,7 +6,7 @@ package zoosim;
 
 /**
  *
- * @author micha
+ * @author michael zheng
  */
 public interface IEntity extends IObject{
     public void move();

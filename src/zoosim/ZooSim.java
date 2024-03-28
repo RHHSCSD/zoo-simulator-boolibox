@@ -24,6 +24,7 @@ public class ZooSim {
         fish.turn(360);
         zoo.moveAnimals();
         zoo.zooStatistics(fish);
+        fish.makeSound();
     }
 }
 //There is an inaccuracy with the position calculations after moving due to the sin/cos functions and also because of the variables being integers

@@ -6,7 +6,7 @@ package zoosim;
 
 /**
  *
- * @author micha
+ * @author michael zheng
  */
 public interface IObject {
     public void turn(double degrees);

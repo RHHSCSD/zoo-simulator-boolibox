@@ -12,10 +12,27 @@ public class BirdAnim extends Animal implements IFlyable{
     private boolean canFly;
     private boolean currentlyFlying;
     
+    /**
+     * Constructor for bird animals
+     * @param age
+     * @param speed
+     * @param name
+     * @param species
+     * @param sex
+     * @param size
+     * @param sound
+     * @param x
+     * @param y
+     * @param canFly
+     */
     public BirdAnim(int age, int speed, String name, String species, String sex, String size, String sound, int x, int y, boolean canFly){
         super(age, speed, name, species, sex, size, sound, x, y);
         this.canFly = canFly;
     }
+
+    /**
+     * Makes a bird animal fly
+     */
     @Override
     public void fly(){
         if(canFly == true && currentlyFlying == false){
@@ -23,11 +40,20 @@ public class BirdAnim extends Animal implements IFlyable{
             setCurrentlyFlying(true);
         }
     }
+
+    /**
+     * Makes a bird animal land
+     */
     @Override
     public void land(){
         System.out.println("Landing");
         setCurrentlyFlying(false);
     }
+
+    /**
+     * Tells the user if a bird animal is flying or not
+     * @return
+     */
     @Override
     public boolean isFlying(){
         return currentlyFlying;
